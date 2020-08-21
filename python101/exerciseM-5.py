@@ -1,4 +1,4 @@
-i = 4
+i = int(input("How many row: "))
 j = "*"
 
 while i >= 1 :

@@ -3,6 +3,7 @@ try:
     bill = float(input("Total bill amount: "))
     service = input("Level of service: ")
 
+
     if service.lower() == "good" :
         tip = bill * 0.20
         bill_total = bill + tip
@@ -21,6 +22,7 @@ try:
         print(f'Total amount: ${"%.2f" % bill_total}')
     else:
         print("Invalid input. Choice of Level of service: good, fair, bad.")
+   
 
-except ValueError :
-    print("Invalid input. type a number!")
+except ValueError as e :
+    print(f"Invalid input. type a number! , {e}" )

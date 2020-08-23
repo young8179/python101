@@ -1,6 +1,6 @@
 
 g_list = []
-another_input = "yes"
+
 
 
 
@@ -9,10 +9,10 @@ while True:
     # ask to pick
     menu = input("pick what you want? add/print/remove/exit: ")
     print(menu)
-   
+
    #if add,
     while True:
-         
+
         if menu == "add" :
             item_input = input("add item: ")
             g_list.append(item_input)
@@ -24,20 +24,20 @@ while True:
                 print("invalid input.")
                 break
 #if remove
-    
+
         elif menu == "remove":
             remove_input = int(input("type number of item: "))
             del g_list[remove_input-1]
             break
-    
-# if print 
+
+# if print
         elif menu == "print" :
-            
+
             for item in range(len(g_list)) :
                 print(f"{item+1}. " + g_list[item] )
-                
+
             break
-#if exit 
+#if exit
         elif menu == "exit":
             quit()
         else:                                                   #invalid input for menu

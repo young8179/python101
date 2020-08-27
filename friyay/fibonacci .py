@@ -12,11 +12,10 @@ user_input = int(input("give me number: "))
 number_1 = 1
 number_2 = 1
 count = [number_1, number_2]
-number_n = []
+
 
 for index in range(user_input-2):
     number_n = count[index] + count[index + 1]
     count.append(number_n)
+print(count)
 
-for result in count:
-    print(result)
